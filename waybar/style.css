@@ -5,29 +5,28 @@
 }
 
 window#waybar {
-    background-color: #282828;
-    color: #ebdbb2;
+    background-color: #191724;
+    color: #e0def4;
 }
 
 
 #workspaces button {
     padding: 0 5px;
     margin: 0 4px;
-    background-color: #282828;
-    color: #ebdbb2;
+    background-color: #191724;
+    color: #e0def4;
 }
 
 #workspaces button.focused {
-    color: #7daea3;
+    color: #9ccfd8;
 }
 
 #workspaces button.urgent {
-    background-color: #eb4d4b;
+    background-color: #eb6f92;
 }
 
 #mode {
-    background-color: #64727D;
-    box-shadow: inset 0 -3px #ffffff;
+    background-color: #e0def4;
 }
 
 #clock,
@@ -41,7 +40,7 @@ window#waybar {
 #mode,
 #scratchpad,
 #mpd {
-    background-color: #282828;
+    background-color: #191724;
     margin: 3px;
     padding: 0 10px;
     border-radius: 3px;
@@ -54,29 +53,25 @@ window#waybar {
 }
 
 #clock {
-    color: #a9b665
+    color: #cecacd;
 }
 
 #battery {
-    color: #89b482
+    color: #ebbcba;
 }
 
 #battery.charging, #battery.plugged {
-    color: #ffffff;
-    background-color: #26A65B;
+    color: #f6c177;
 }
 
 @keyframes blink {
     to {
-        background-color: #ffffff;
-        color: #000000;
+        color: #eb6f92
     }
 }
 
-/* Using steps() instead of linear as a timing function to limit cpu usage */
 #battery.critical:not(.charging) {
-    background-color: #f53c3c;
-    color: #ffffff;
+    color: #eb6f92;
     animation-name: blink;
     animation-duration: 0.5s;
     animation-timing-function: steps(12);
@@ -84,38 +79,35 @@ window#waybar {
     animation-direction: alternate;
 }
 #cpu {
-    color: #e78a4e;
+    color: #ebbcba;
 }
 
 #memory {
-    color: #e78a4e;
+    color: #ebbcba;
 }
 
 #backlight {
-    color: #d8a657;
+    color: #9ccfd8;
 }
 
 #network {
-    color: #7daea3;
+    color: #f6c177;
 }
 
 #network.disconnected {
-    color: #ea6962
+    color: #eb6f92;
 }
 
 #pulseaudio {
-    color: #d8a657;
+    color: #e0def4;
 }
 
-#pulseaudio.muted {
-    color: #d8a657;
-}
 #temperature {
-    color: #a9b665;
+    color: #9ccfd8;
 }
 
 #temperature.critical {
-    background-color: #eb4d4b;
+    background-color: #eb6f92;
 }
 
 #scratchpad {

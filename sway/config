@@ -21,7 +21,7 @@ set $menu fuzzel
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg $HOME/.config/backgrounds/beach.png fill
+output * bg $HOME/.config/backgrounds/purple-tech.jpg fill
 #
 # Example configuration:
 #
@@ -210,7 +210,7 @@ shadows enable
 shadow_color #141617
 shadow_offset 3 3
 #end#end#end
-for_window [app_id="firefox"] move window to workspace 3
+for_window [app_id="firefox"] move window to workspace 2
 
 #
 # Utilities:
