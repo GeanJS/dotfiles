@@ -22,8 +22,9 @@ vim.opt.incsearch = true
 -- qualidade de vida, cores melhores, barra de sinais
 vim.opt.termguicolors = true
 vim.opt.scrolloff = 8
-vim.opt.signcolumn = "yes"
+vim.opt.signcolumn = "no"
 vim.opt.updatetime = 50
+vim.opt.colorcolumn = "120"
 
 -- tecla espaço como tecla principal
 vim.g.mapleader = " "
@@ -38,3 +39,5 @@ vim.api.nvim_create_autocmd("WinNew", {
 
 -- tira o simbolo do tio das linhas em branco
 vim.opt.fillchars = {eob = " "}
+vim.opt.showmode = false
+vim.diagnostic.config({ virtual_text = true })

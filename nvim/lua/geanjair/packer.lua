@@ -4,11 +4,9 @@ return require('packer').startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
 
-  use {"catppuccin/nvim",
-  	as = 'catppuccin',
-  	config = function()
-		vim.cmd('colorscheme catppuccin-mocha')
-	end
+  use {'rose-pine/neovim', config = function()
+    vim.cmd 'colorscheme rose-pine'
+    end
   }
 
   use {'nvim-telescope/telescope.nvim',
@@ -43,5 +41,11 @@ return require('packer').startup(function(use)
   use { 'rafamadriz/friendly-snippets' }
   -- (Opcional) ícones / formatting para o completion
   use { 'onsails/lspkind-nvim' }
+
+
+  use {
+    'nvim-lualine/lualine.nvim',
+    requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+ }
 
 end)

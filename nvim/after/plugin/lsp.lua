@@ -13,7 +13,7 @@ local has_mason_lspconfig, mason_lspconfig = pcall(require, 'mason-lspconfig')
 if has_mason_lspconfig then
   mason_lspconfig.setup({
     -- altere a lista abaixo para os servidores que você quer garantir instalados
-    ensure_installed = { 'pyright', 'ts_ls', 'lua_ls', 'gopls', 'bashls' },
+    ensure_installed = {'ts_ls', 'lua_ls', 'gopls', 'bashls' },
     automatic_installation = true,
   })
 end
